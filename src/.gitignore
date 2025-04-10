@@ -1,0 +1,28 @@
+
+# user-agents
+src/data/user-agents.json
+
+# Node
+node_modules/
+.env
+.env*
+dist/
+logs/
+log/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vite (if used for any frontend bits)
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# npm
+package-lock.json
+
+# Optional:
+*.gz
