@@ -1,12 +1,19 @@
-import Fastify from 'fastify'
+import Fastify from 'fastify';
+import '@/plugins/scheduler';
+import logger from './utils/logger';
+import userAgentRoute from './routes/userAgents';
 
 const app = Fastify()
+
+await app.register(userAgentRoute);
 
 app.get('/ping', async () => {
   return { pong: true }
 })
 
-app.listen({ port: 3000 }, (err, address) => {
+
+
+app.listen({ port: 3000, host: "0.0.0.0" }, (err, address) => {
   if (err) throw err
-  console.log(`Server listening at ${address}`)
+  logger.info(`Server listening at ${address}`)
 })
