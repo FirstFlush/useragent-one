@@ -2,9 +2,10 @@ import { FastifyInstance } from "fastify";
 import { userAgentQuerySchema } from "@/schemas/userAgentQuery";
 import getUserAgents from "@/services/getUserAgents";
 import { ApiResponse } from "@/types/response";
+import { ROUTES } from "@/data/routes";
 
 const userAgentRoute = async (fastify: FastifyInstance) => {
-  fastify.get("/user-agents", async (req, reply) => {
+  fastify.get(ROUTES.API.userAgents, async (req, reply) => {
     const result = userAgentQuerySchema.safeParse(req.query);
     if (!result.success) {
       const apiResponse: ApiResponse = {
