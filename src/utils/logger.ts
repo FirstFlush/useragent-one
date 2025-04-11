@@ -2,7 +2,7 @@ import pino from "pino";
 
 const isProduction = process.env.NODE_ENV === "production";
 
-export const logger = pino(
+const logger = pino(
   isProduction
     ? {
         level: "warn",
@@ -30,3 +30,5 @@ export const logger = pino(
         },
       }
 );
+
+export default logger;
