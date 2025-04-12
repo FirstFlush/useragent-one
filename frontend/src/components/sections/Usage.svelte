@@ -1,7 +1,8 @@
 <script lang="ts">
   import { apiParams } from "../../data/apiParams";
   import { USAGE_CONSTANTS } from "../../data/constants";
-  import { SlidersHorizontal, Link, BookText, ArrowRightCircle } from "lucide-svelte";
+  import { SlidersHorizontal, Link, BookText, ArrowRightCircle, ArrowLeftCircle, TriangleAlert } from "lucide-svelte";
+  import { RESPONSE_EXAMPLE } from "../../data/constants";
 </script>
 
 
@@ -16,15 +17,20 @@
     </p>
     <pre><code class="text-white">https://useragent.one/api/user-agents</code></pre>
 
-
     <p class="flex items-center gap-2">
       <ArrowRightCircle size="16" /><span>Make a <span class="font-semibold">GET</span> request to the API with optional filters</span>
     </p>
-  
     <pre><code class="language-js text-white">
   fetch({USAGE_CONSTANTS.FetchUrl})
     .then(res => res.json())
     .then(console.log);
+    </code></pre>
+
+    <p class="flex items-center gap-2">
+      <ArrowLeftCircle size="16"/><span>Receive a <span class="font-semibold">JSON</span> response as an array of objects</span>
+    </p>
+    <pre><code class="language-json text-white">
+      {RESPONSE_EXAMPLE}
     </code></pre>
 
   <div class="pt-12">
@@ -45,8 +51,20 @@
       {/each}
     </div>
   </div>
+  <div class="pt-12">
+    <h3 class="flex items-center gap-2 mb-12 sm:mb-0"><TriangleAlert />Limits</h3>
+    <ul class="prose-invert">
+      <li>
+        60 requests per minute
+      </li>
+      <li>
+        50 user agents per request max
+      </li>
+    </ul>
+  </div>
 </div>
     
+
 <!-- 
     <ul>
       <li><code>deviceCategory</code> – <code>mobile | desktop | tablet</code></li>

@@ -1,16 +1,17 @@
 
 
 <div class="mx-auto max-w-2xl px-4 text-center">
-    <h1 class="text-slate-600 text-balance text-5xl font-light tracking-tight text-primary sm:text-6xl">
-        Free User-Agent API
+    <h1 class="text-slate-700 text-balance text-5xl font-light tracking-tight text-primary sm:text-6xl">
+        UserAgent.one
     </h1>
-    <div class="mt-8 text-pretty text-lg font-medium text-slate-800 sm:text-xl/8">
-    <p class="mb-6">
-        Get realistic, randomly generated user-agent strings for testing, scraping, and spoofing — powered by the user-agents package. 
-    </p>
-    <p>
-        Access the full API, with filtering options and a daily-refreshed user-agent list, in a browser-first context via a simple GET request.
-    </p>
+    <h5 class="text-slate-500 text-xl mt-4 italic">The user-agents NPM package, served via free API</h5>
+    <div class="mt-8 text-pretty font-medium text-slate-800 sm:text-xl/8">
+        <p class="">
+            Access random, realistic user-agent strings from the popular <span class="whitespace-nowrap"><a class="!font-medium rounded-lg bg-slate-500 text-white px-2 py-1" href="https://github.com/intoli/user-agents" target="_blank" rel="noopener noreferrer">user-agents</a></span> NPM package — directly in the browser, without needing Node.
+        </p>
+        <p>
+            Hit a simple GET endpoint. Filter as needed. Fresh data, updated daily. No sign-up required.
+        </p>
     </div>
 </div>    
 

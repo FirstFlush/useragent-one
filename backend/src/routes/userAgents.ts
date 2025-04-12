@@ -20,6 +20,7 @@ const userAgentRoute = async (fastify: FastifyInstance) => {
     const apiResponse: ApiResponse = {
       data: matches,
       success: true,
+      msg: "",
     }
     return reply.send(apiResponse);
   });
