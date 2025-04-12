@@ -2,10 +2,19 @@ import Fastify from 'fastify';
 import './plugins/scheduler';
 import logger from './utils/logger';
 import userAgentRoute from './routes/userAgents';
+import cors from '@fastify/cors';
 
-const app = Fastify()
+const app = Fastify();
 
-app.register(userAgentRoute);
+(async () => {
+  await app.register(cors, {
+    origin: process.env.product ? 'https://useragent.one': '*',
+  });
+  await app.register(userAgentRoute)
+})();
+
+
+
 
 app.get('/ping', async () => {
   return { pong: true }
