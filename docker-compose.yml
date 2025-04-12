@@ -1,13 +1,17 @@
 services:
   ua_api:
-    build: ./backend
+    build: 
+      context: ./backend
+      provenance: true
     container_name: useragent_api
     ports:
       - "9001:3001"
     restart: always
 
   ua_frontend:
-    build: ./frontend
+    build: 
+      context: ./frontend
+      provenance: true
     container_name: useragent_frontend
     ports:
       - "9000:3000"
