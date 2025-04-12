@@ -5,7 +5,7 @@
 </script>
 
 <div
-  class="bg-cover h-screen w-full py-4"
+  class="bg-cover w-full py-4"
   style="background-image: url('/images/abstract-bg-grey-long.webp')"
 >
 <Hero />

@@ -6,7 +6,7 @@
 
 <a 
     href={href} 
-    class="nav-link text-sm/6 font-semibold text-gray-400 {className}"
+    class="nav-link text-sm/6 tracking-wide font-semibold text-slate-700 {className}"
     target={external ? "_blank" : null}
     rel={external ? "noopener noreferrer" : null}
 >
