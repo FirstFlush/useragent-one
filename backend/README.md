@@ -26,13 +26,3 @@ This is the **Fastify + TypeScript** backend for [useragent.one](https://userage
 ### 🔄 Fresh User-Agents
 
 The `user-agents` package maintains an up-to-date list of real browser user-agent strings, updated daily. This backend uses `node-cron` to pull a fresh copy of the list every 24 hours, so you always get the latest without redeploying or reinstalling.
-
----
-
-### 📦 Docker
-
-To build and run:
-
-```bash
-docker build -t useragent-backend .
-docker run -p 9001:3001 useragent-backend
