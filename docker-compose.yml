@@ -10,5 +10,5 @@ services:
     build: ./frontend
     container_name: useragent_frontend
     ports:
-      - "9000:3000"
+      - "9000:4173"
     restart: always
