@@ -1,3 +1,6 @@
+version: '3.8'
+
+services:
   ua_api:
     build: ./backend
     container_name: useragent_api
