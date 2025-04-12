@@ -13,13 +13,13 @@
           <Logomark width="64" height="64" className="text-slate-700" />
         </a>
       </div>
-      <div class="flex flex-1 justify-end gap-8">
+      <div class="flex flex-1 items-center justify-end gap-8">
         <NavLink
           href="#usage"
         >
-          Usage
+          API Guide
         </NavLink >
-        <NavLink href="https://github.com/firstflush/useragent-one" external={true}>
+        <NavLink icon={true} href="https://github.com/firstflush/useragent-one" external={true}>
           <Github height="24" width="24" />
         </NavLink>
       </div>

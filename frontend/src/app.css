@@ -42,20 +42,3 @@ body {
 	/* background-attachment: fixed; */
 } 
 
-a {
-  /* color: #a9876a; */
-  /* color: #567c73  ; */
-  /* color: #4a6fa5; */
-  font-weight: 600;
-  /* text-decoration: underline; */
-}
-
-a.nav-link {
-  letter-spacing: 2px;
-  text-decoration: none;
-}
-a:hover {
-  opacity: 0.7;
-}
-
-

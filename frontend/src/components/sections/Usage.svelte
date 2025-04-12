@@ -10,7 +10,7 @@
 <div id="usage" class="text-slate-900 relative overflow-hidden prose max-w-2xl shadow-lg sm:w-full mx-4 sm:mx-auto px-4 sm:px-12 py-12 rounded-lg ">
   <div class="absolute inset-0 z-0 bg-slate-700/15 backdrop-blur-sm border border-white/10 shadow-lg"></div>
   <div class="relative z-10">
-  <h2 class="flex items-center gap-2"><BookText /> API Usage</h2>
+  <h2 class="flex items-center gap-2"><BookText /> API Guide</h2>
   <Border />
     <p class="text-lg font-semibold flex items-center gap-2">
       <Link size="16" /> Endpoint
@@ -36,7 +36,7 @@
   <div class="pt-12">
     <h2 class="flex items-center gap-2"><SlidersHorizontal />Query Parameters</h2>
     <Border />
-    <div class="flex flex-col gap-12 sm:gap-6">
+    <div class="flex flex-col gap-12 mt-6 sm:mt-0 sm:gap-6">
       {#each apiParams as param}
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
           <div>
@@ -55,12 +55,12 @@
   <div class="pt-12">
     <h2 class="flex items-center gap-2"><TriangleAlert />Limits</h2>
     <Border />
-    <ul class="prose-invert">
+    <ul class="prose-invert mt-6">
       <li>
-        60 requests per minute
+        <span class="font-semibold">60</span> requests per minute
       </li>
       <li>
-        50 user agents per request max
+        <span class="font-semibold">50</span> user agents per request max
       </li>
     </ul>
   </div>
