@@ -10,7 +10,7 @@
       <div class="flex lg:flex-1">
         <a href="/" class="-m-1.5 p-1.5">
           <span class="sr-only">userAgent.one</span>
-          <Logomark width="64" height="64" className="text-primary" />
+          <Logomark width="64" height="64" className="text-slate-700" />
         </a>
       </div>
       <div class="flex flex-1 justify-end gap-8">
