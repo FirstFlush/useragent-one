@@ -1,9 +1,9 @@
 
 
 <div class="mx-auto max-w-2xl px-4 text-center">
-    <h1 class="text-slate-700 text-balance text-5xl font-light tracking-tight text-primary sm:text-6xl">
+    <h1 class="text-slate-700 text-balance text-5xl sm:text-6xl font-semibold tracking-[-0.02em] font-sans">
         UserAgent.one
-    </h1>
+      </h1>
     <h5 class="text-slate-500 text-xl mt-4 italic">The user-agents NPM package, served via free API</h5>
     <div class="mt-8 text-pretty font-medium text-slate-800 sm:text-xl/8">
         <p class="">

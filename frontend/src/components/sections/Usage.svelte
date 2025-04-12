@@ -3,15 +3,15 @@
   import { USAGE_CONSTANTS } from "../../data/constants";
   import { SlidersHorizontal, Link, BookText, ArrowRightCircle, ArrowLeftCircle, TriangleAlert } from "lucide-svelte";
   import { RESPONSE_EXAMPLE } from "../../data/constants";
+  import Border from "../Border.svelte";
 </script>
 
 
-<!-- <div id="usage" class="bg-slate-700/20 prose max-w-2xl sm:w-full mx-4 sm:mx-auto px-4 sm:px-12 py-12 rounded-lg shadow-md"> -->
 <div id="usage" class="text-slate-900 relative overflow-hidden prose max-w-2xl shadow-lg sm:w-full mx-4 sm:mx-auto px-4 sm:px-12 py-12 rounded-lg ">
-  <!-- <div class="absolute inset-0 z-0 bg-slate-700/20 backdrop-blur-sm"></div> -->
   <div class="absolute inset-0 z-0 bg-slate-700/15 backdrop-blur-sm border border-white/10 shadow-lg"></div>
   <div class="relative z-10">
-  <h2 class="flex items-center gap-2 mb-12"><BookText /> API Usage</h2>
+  <h2 class="flex items-center gap-2"><BookText /> API Usage</h2>
+  <Border />
     <p class="text-lg font-semibold flex items-center gap-2">
       <Link size="16" /> Endpoint
     </p>
@@ -27,14 +27,15 @@
     </code></pre>
 
     <p class="flex items-center gap-2">
-      <ArrowLeftCircle size="16"/><span>Receive a <span class="font-semibold">JSON</span> response as an array of objects</span>
+      <ArrowLeftCircle size="16"/><span>Receive a <span class="font-semibold">JSON</span> response</span>
     </p>
     <pre><code class="language-json text-white">
       {RESPONSE_EXAMPLE}
     </code></pre>
 
   <div class="pt-12">
-    <h3 class="flex items-center gap-2 mb-12 sm:mb-0"><SlidersHorizontal />Query Parameters</h3>
+    <h2 class="flex items-center gap-2"><SlidersHorizontal />Query Parameters</h2>
+    <Border />
     <div class="flex flex-col gap-12 sm:gap-6">
       {#each apiParams as param}
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
@@ -52,7 +53,8 @@
     </div>
   </div>
   <div class="pt-12">
-    <h3 class="flex items-center gap-2 mb-12 sm:mb-0"><TriangleAlert />Limits</h3>
+    <h2 class="flex items-center gap-2"><TriangleAlert />Limits</h2>
+    <Border />
     <ul class="prose-invert">
       <li>
         60 requests per minute
