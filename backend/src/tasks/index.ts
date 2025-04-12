@@ -1,7 +1,7 @@
 // tasks/index.ts
 import { fetchUserAgentData } from "./fetchData";
 import { loadUserAgentData } from "./saveData";
-import logger from "@/utils/logger";
+import logger from "../utils/logger";
 
 /**
 * Fetch user-agents list from user-agents github repo
@@ -17,9 +17,10 @@ export const refreshUserAgentData = async() => {
   }
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
-  (async () => {
-    logger.info("Manually refreshing user-agent data...")
-    await refreshUserAgentData();
-  })();
-}
+// only allowed is ESM modules, not commonjs. will revisit this if switch to ESM
+// if (import.meta.url === `file://${process.argv[1]}`) {
+//   (async () => {
+//     logger.info("Manually refreshing user-agent data...")
+//     await refreshUserAgentData();
+//   })();
+// }

@@ -2,7 +2,7 @@ import { createWriteStream } from "fs";
 import { pipeline } from "stream/promises";
 import { createGunzip } from "zlib";
 import { Readable } from "stream";
-import { UA_SOURCE_URL, UA_DEST_PATH } from "@/data/constants";
+import { UA_SOURCE_URL, UA_DEST_PATH } from "../data/constants";
 
 export const fetchUserAgentData = async () => {
   const res = await fetch(UA_SOURCE_URL);

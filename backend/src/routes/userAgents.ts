@@ -1,8 +1,8 @@
 import { FastifyInstance } from "fastify";
-import { userAgentQuerySchema } from "@/schemas/userAgentQuery";
-import getUserAgents from "@/services/getUserAgents";
-import { ApiResponse } from "@/types/response";
-import { ROUTES } from "@/data/routes";
+import { userAgentQuerySchema } from "../schemas/userAgentQuery";
+import getUserAgents from "../services/getUserAgents";
+import { ApiResponse } from "../types/response";
+import { ROUTES } from "../data/routes";
 
 const userAgentRoute = async (fastify: FastifyInstance) => {
   fastify.get(ROUTES.API.userAgents, async (req, reply) => {

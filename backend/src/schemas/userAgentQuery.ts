@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { REQUEST_LIMIT } from "@/data/constants";
+import { REQUEST_LIMIT } from "../data/constants";
 
 export const userAgentQuerySchema = z.object({
   deviceCategory: z.enum(["desktop", "mobile", "tablet"]).optional(),
