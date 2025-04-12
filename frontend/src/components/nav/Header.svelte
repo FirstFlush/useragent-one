@@ -13,8 +13,6 @@
           <Logomark width="64" height="64" className="text-primary" />
         </a>
       </div>
-
-      <!-- <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-8"> -->
       <div class="flex flex-1 justify-end gap-8">
         <NavLink
           href="#usage"
