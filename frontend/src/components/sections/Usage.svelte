@@ -6,7 +6,7 @@
 
 
 <!-- <div id="usage" class="bg-slate-700/20 prose max-w-2xl sm:w-full mx-4 sm:mx-auto px-4 sm:px-12 py-12 rounded-lg shadow-md"> -->
-<div id="usage" class="text-slate-900 relative overflow-hidden prose max-w-2xl sm:w-full mx-4 sm:mx-auto px-4 sm:px-12 py-12 rounded-lg ">
+<div id="usage" class="text-slate-900 relative overflow-hidden prose max-w-2xl shadow-lg sm:w-full mx-4 sm:mx-auto px-4 sm:px-12 py-12 rounded-lg ">
   <!-- <div class="absolute inset-0 z-0 bg-slate-700/20 backdrop-blur-sm"></div> -->
   <div class="absolute inset-0 z-0 bg-slate-700/15 backdrop-blur-sm border border-white/10 shadow-lg"></div>
   <div class="relative z-10">

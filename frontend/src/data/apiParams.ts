@@ -3,7 +3,7 @@ export const apiParams = [
     name: 'limit',
     type: 'number',
     note: '1–50',
-    desc: 'Maximum number of user-agents to return.',
+    desc: 'Maximum number of user-agents to return. Defaults to 1.',
   },
   {
     name: 'deviceCategory',
