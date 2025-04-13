@@ -1,11 +1,11 @@
 import cron from 'node-cron';
-import { refreshUserAgentData } from '@/tasks/refreshUserAgents';
+import { refreshUserAgentData } from '../tasks/refreshUserAgents';
 import logger from '../utils/logger';
 
 logger.info("Scheduler file imported and cron is registered.");
 
 // UTC time
-cron.schedule("38 18 * * *", async () => {
+cron.schedule("12 19 * * *", async () => {
     if (process.env.NODE_ENV === "production") {
         logger.info("Running scheduled UA refresh task");
         await refreshUserAgentData();

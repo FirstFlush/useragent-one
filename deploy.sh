@@ -49,8 +49,8 @@ docker compose build --no-cache
 echo -e "\n[5/6] Starting containers..."
 docker compose up -d
 
-echo -e "\n[6/6] Reloading Nginx (sudo)..."
-systemctl reload nginx
+# echo -e "\n[6/6] Reloading Nginx (sudo)..."
+# systemctl reload nginx
 
 echo -e "\n✅ App updated successfully."
 

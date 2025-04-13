@@ -6,8 +6,6 @@ import cors from '@fastify/cors';
 
 const app = Fastify();
 
-
-
 (async () => {
   await app.register(cors, {
     origin: process.env.NODE_ENV === "production" ? 'https://useragent.one': '*',
