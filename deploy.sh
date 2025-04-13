@@ -48,8 +48,7 @@ echo -e "\n[5/6] Starting containers..."
 docker compose up -d
 
 echo -e "\n[6/6] Reloading Nginx (sudo)..."
-sudo -v  # ask for sudo password once
-sudo systemctl reload nginx
+systemctl reload nginx
 
 echo -e "\n✅ App updated successfully."
 
