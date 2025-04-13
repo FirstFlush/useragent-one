@@ -1,14 +1,16 @@
 import Fastify from 'fastify';
-import * as scheduler from './plugins/scheduler';
+import "@/plugins/scheduler"
 import logger from './utils/logger';
 import userAgentRoute from './routes/userAgents';
 import cors from '@fastify/cors';
 
 const app = Fastify();
 
+
+
 (async () => {
   await app.register(cors, {
-    origin: process.env.product ? 'https://useragent.one': '*',
+    origin: process.env.NODE_ENV === "production" ? 'https://useragent.one': '*',
   });
   await app.register(userAgentRoute)
 })();
