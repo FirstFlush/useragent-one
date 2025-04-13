@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Run as sudo!
+
 # Deploy script for useragent-one.
 # - pull updates from github
 # - rebuild docker containers with new updates
