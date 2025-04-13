@@ -5,11 +5,11 @@ import logger from '../utils/logger';
 logger.info("Scheduler file imported and cron is registered.");
 
 // UTC time
-cron.schedule("03 18 * * *", async () => {
+cron.schedule("9 18 * * *", async () => {
     if (process.env.NODE_ENV === "production") {
         logger.info("Running scheduled UA refresh task");
         await refreshUserAgentData();
     } else {
-        logger.info("Skipped UA refresh task (not in production)");
+        logger.info("Skipped scheduled UA refresh task (not in production)");
     }
 });
