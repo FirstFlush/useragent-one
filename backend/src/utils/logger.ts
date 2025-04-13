@@ -1,7 +1,9 @@
 import pino from "pino";
+import fs from "fs";
+import path from "path";
 
 const isProduction = process.env.NODE_ENV === "production";
-
+fs.mkdirSync(path.join("log"), { recursive: true });
 const logger = pino(
   isProduction
     ? {

@@ -25,6 +25,8 @@ if [[ "$1" == "--no-pull" ]]; then
   SKIP_PULL=true
 fi
 
+sudo -v
+
 echo "Updating app on server..."
 
 if [ "$SKIP_PULL" = false ]; then
