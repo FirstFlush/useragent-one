@@ -48,6 +48,7 @@ const truncateData = (data: UserAgentObject[], limit: number): UserAgentObject[]
 
 const getUserAgents = (filters: UserAgentRequestFilters): UserAgentObject[] => {
     try {
+        const userAgents: UserAgentObject[] = loadUserAgentsFromFile();
         const { limit, ...userAgentFilters } = filters;
         const data = filterUserAgents(userAgents as UserAgentObject[], userAgentFilters);
         const safeLimit = Math.min(limit, REQUEST_LIMIT);
@@ -59,6 +60,5 @@ const getUserAgents = (filters: UserAgentRequestFilters): UserAgentObject[] => {
 };
 
 
-const userAgents: UserAgentObject[] = loadUserAgentsFromFile();
 
 export default getUserAgents
