@@ -1,5 +1,5 @@
 import Fastify from 'fastify';
-import "@/plugins/scheduler"
+import "./plugins/scheduler"
 import logger from './utils/logger';
 import userAgentRoute from './routes/userAgents';
 import cors from '@fastify/cors';
