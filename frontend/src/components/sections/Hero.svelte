@@ -7,7 +7,7 @@
     <h5 class="text-slate-500 text-xl mt-4 italic">The user-agents NPM package, served via free API</h5>
     <div class="mt-8 text-pretty font-bold text-slate-800 sm:text-xl/8">
         <p class="">
-            Access random, realistic user-agent strings from the popular <span class="whitespace-nowrap"><a class="!font-medium rounded-lg bg-slate-500 text-white px-2 py-1 hover:bg-slate-700" href="https://github.com/intoli/user-agents" target="_blank" rel="noopener noreferrer">user-agents</a></span> NPM package — directly in the browser, without needing Node.
+            Access random, realistic user-agent strings from the popular <span class="whitespace-nowrap"><a class="!font-medium focus:outline-none focus:bg-slate-400 rounded-lg bg-slate-500 text-white px-2 py-1 hover:bg-slate-700" href="https://github.com/intoli/user-agents" target="_blank" rel="noopener noreferrer">user-agents</a></span> NPM package — directly in the browser, without needing Node.
         </p>
         <p>
             Hit a simple GET endpoint. Filter as needed. Fresh data, updated daily. No sign-up required.

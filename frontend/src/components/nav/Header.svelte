@@ -6,14 +6,14 @@
 
 
 <header class="absolute text-slate-700 inset-x-0 top-0 z-50">
-    <nav class="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
-      <div class="flex lg:flex-1">
+    <nav class="flex items-center justify-between p-4 lg:px-8 mt-3 sm:mt-0" aria-label="Global">
+      <div class="lg:flex-1 hidden sm:flex">
         <a href="/" class="-m-1.5 p-1.5">
           <span class="sr-only">userAgent.one</span>
-          <Logomark width="64" height="64" className="text-slate-700" />
+          <Logomark width="64" height="64" className="text-slate-700"/>
         </a>
       </div>
-      <div class="flex flex-1 items-center justify-end gap-8">
+      <div class="flex flex-1 items-center justify-end gap-2 sm:gap-8">
         <NavLink
           href="#usage"
         >
