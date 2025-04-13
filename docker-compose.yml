@@ -2,6 +2,8 @@ services:
   ua_api:
     build: ./backend
     container_name: useragent_api
+    environment:
+      - NODE_ENV=production
     ports:
       - "9001:3001"
     restart: always
@@ -9,6 +11,8 @@ services:
   ua_frontend:
     build: ./frontend
     container_name: useragent_frontend
+    environment:
+      - NODE_ENV=production
     ports:
       - "9000:4173"
     restart: always
