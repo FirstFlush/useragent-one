@@ -12,12 +12,15 @@ const logger = pino(
           targets: [
             {
               target: "pino/file",
-              options: {
-                destination: "log/app.log",
-              },
-              level: "warn",
+              options: { destination: "log/app.log" },
+              level: "info",
             },
-          ],
+            {
+              target: "pino-pretty",
+              options: { colorize: false },
+              level: "info",
+            },
+          ]
         },
       }
     : {
