@@ -1,7 +1,7 @@
 import cron from 'node-cron';
 import { refreshUserAgentData } from '../tasks/refreshUserAgents';
 import logger from '../utils/logger';
-import { UA_REFRESH_HOUR, UA_REFRESH_MINUTE } from '@/data/constants';
+import { UA_REFRESH_HOUR, UA_REFRESH_MINUTE } from '../data/constants';
 
 logger.info("Scheduler file imported and cron is registered.");
 logger.info(`Refreshing user agents list daily at ${UA_REFRESH_HOUR}:${UA_REFRESH_MINUTE} UTC.`)
