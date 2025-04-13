@@ -20,6 +20,15 @@
  
 set -e  # Exit on error
 
+if [ ! -f .env ]; then
+  echo "⚠️  .env file not found! Deploy may fail if required vars are missing."
+  read -p "Do you want to continue anyway? [y/N]: " confirm
+  if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
+    echo "🛑 Exiting deploy."
+    exit 1
+  fi
+fi
+
 SKIP_PULL=false
 if [[ "$1" == "--no-pull" ]]; then
   SKIP_PULL=true
