@@ -3,7 +3,7 @@ import { refreshUserAgentData } from '../tasks';
 import logger from '../utils/logger';
 
 // UTC time
-cron.schedule("7 17 * * *", async () => {
+cron.schedule("15 17 * * *", async () => {
     if (process.env.NODE_ENV === "production") {
         logger.info("Running scheduled UA refresh task");
         await refreshUserAgentData();
