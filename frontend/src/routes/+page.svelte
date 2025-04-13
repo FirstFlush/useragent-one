@@ -7,10 +7,10 @@
   class="bg-cover w-full py-4"
   style="background-image: url('/images/abstract-bg-grey-long.webp')"
 >
-<section class="mt-48 mb-36">
+<section class="mt-36 sm:mt-48 mb-24 sm:mb-36">
   <Hero />
 </section>
-<section class="mb-24">
+<section class="mb-18">
   <Usage />
 </section>
 
