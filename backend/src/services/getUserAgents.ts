@@ -1,21 +1,18 @@
 import fs from 'fs'
-import path from 'path'
 import { UserAgentObject } from "../types/userAgents";
 import { UserAgentFilters, UserAgentRequestFilters } from "../types/filters";
 import logger from "../utils/logger";
-import { REQUEST_LIMIT } from "../data/constants";
-
+import { REQUEST_LIMIT, UA_DEST_PATH } from "../data/constants";
 
 const loadUserAgentsFromFile = (): UserAgentObject[] => {
-    const filePath = path.resolve(__dirname, "../data/user-agents.json");
   
-    if (!fs.existsSync(filePath)) {
-      logger.warn("user-agents.json not found — defaulting to empty list");
+    if (!fs.existsSync(UA_DEST_PATH)) {
+      logger.warn(`${UA_DEST_PATH} not found — defaulting to empty list`);
       return [];
     }
   
     try {
-      const raw = fs.readFileSync(filePath, 'utf-8');
+      const raw = fs.readFileSync(UA_DEST_PATH, 'utf-8');
       return JSON.parse(raw) as UserAgentObject[];
     } catch (err) {
       logger.error("Failed to parse user-agents.json", err);

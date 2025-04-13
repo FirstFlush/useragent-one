@@ -4,6 +4,12 @@ services:
     container_name: useragent_api
     environment:
       - NODE_ENV=production
+      - UA_REFRESH_HOUR=${UA_REFRESH_HOUR}
+      - UA_REFRESH_MINUTE=${UA_REFRESH_MINUTE}
+      - UA_SOURCE_URL=${UA_SOURCE_URL}
+      - UA_DEST_PATH=${UA_DEST_PATH}
+      - DOMAIN=${DOMAIN}
+      - REQUEST_LIMIT=${REQUEST_LIMIT}
     ports:
       - "9001:3001"
     restart: always
