@@ -9,7 +9,7 @@ const app = Fastify();
 
 (async () => {
   await app.register(cors, {
-    origin: process.env.NODE_ENV === "production" ? 'https://useragent.one': '*',
+    origin: true,
   });
   await app.register(userAgentRoute)
 })();
