@@ -13,12 +13,12 @@
   <h2 class="flex items-center gap-2"><BookText /> API Guide</h2>
   <Border />
     <p class="text-lg font-semibold flex items-center gap-2">
-      <Link size="16" /> Endpoint
+      <Link size="16" class="w-4" /> Endpoint
     </p>
     <pre><code class="text-white">https://useragent.one/api/user-agents</code></pre>
 
     <p class="flex items-center gap-2">
-      <ArrowRightCircle size="16" /><span>Make a <span class="font-semibold">GET</span> request to the API with optional filters</span>
+      <ArrowRightCircle size="16" class="w-4" /><span>Make a <span class="font-semibold">GET</span> request to the API with optional filters</span>
     </p>
     <pre><code class="language-js text-white">
   fetch({USAGE_CONSTANTS.FetchUrl})
@@ -27,7 +27,7 @@
     </code></pre>
 
     <p class="flex items-center gap-2">
-      <ArrowLeftCircle size="16"/><span>Receive a <span class="font-semibold">JSON</span> response</span>
+      <ArrowLeftCircle size="16" class="w-"/><span>Receive a <span class="font-semibold">JSON</span> response</span>
     </p>
     <pre><code class="language-json text-white">
       {RESPONSE_EXAMPLE}
