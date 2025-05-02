@@ -8,7 +8,7 @@ services:
       - UA_REFRESH_MINUTE=${UA_REFRESH_MINUTE}
       - REQUEST_LIMIT=${REQUEST_LIMIT}
     ports:
-      - "9001:3001"
+      - "127.0.0.1:9001:3001"
     restart: always
 
   ua_frontend:
@@ -17,5 +17,5 @@ services:
     environment:
       - NODE_ENV=production
     ports:
-      - "9000:4173"
+      - "127.0.0.1:9000:4173"
     restart: always
